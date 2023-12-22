@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.drop-area {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    max-width: 90%;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    border: 2px dashed #555;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23808080' class='bi bi-image' viewBox='0 0 16 16'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3Crect x='1' y='1' width='14' height='14' rx='2' ry='2' fill='%23fff'/%3E%3Cpath fill='%23808080' d='M4.5 8a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z'/%3E%3Cpath fill='%23808080' d='M8 4a4 4 0 1 1-4 4 4 4 0 0 1 4-4zm0-1a5 5 0 1 0 5 5A5 5 0 0 0 8 3z'/%3E%3C/svg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.drop-area-over {
+    border: 2px dashed #2196f3;
+}
+
+.drop-area-preview {
+    flex: 0 0 45%;
+    position: relative;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.drop-area-name {
+    text-align: center;
+}
+
+.drop-area-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: flex;
+    background-color: #333;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.drop-area-remove:hover {
+    background-color: #555;
+}
+
+.input-and-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#file-input {
+    border: 2px dashed #777;
+    padding: 15px;
+}
+
+.txt {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
